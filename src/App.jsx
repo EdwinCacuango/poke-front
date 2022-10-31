@@ -1,17 +1,14 @@
-import Header from "./components/Header/Header";
-import ListOfPokes from "./components/ListOfPokes/ListOfPokes";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import SinglePokemon from "./pages/SinglePokemon";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <h1>Poke Api Challenge</h1>
-        <p>Esta es una pequeña descripción acerca de su página de pokemones</p>
-        <ListOfPokes></ListOfPokes>
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/poke/:id" element={<SinglePokemon />} />
+    </Routes>
   );
 }
 

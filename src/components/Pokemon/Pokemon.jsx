@@ -1,10 +1,11 @@
+import styles from "./Pokemon.module.css";
 const Pokemon = ({ imgProfile, name, description, route }) => {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.img}>
         <img src={imgProfile} alt={`${name} photo`} />
-        <h2>{name}</h2>
       </div>
+      <h2>{name}</h2>
       <p>{description}</p>
       <a href={route}> Más detalles</a>
     </div>

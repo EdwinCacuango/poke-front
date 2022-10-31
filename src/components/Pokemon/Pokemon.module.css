@@ -1,0 +1,23 @@
+img {
+    max-width: 100%;
+}
+
+.img {
+    max-width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 1rem;
+    height: 30rem;
+
+    border: 1px solid rgb(255 237 213);
+    border-radius: 15px;
+    filter: drop-shadow(0 45px 65px rgba(0, 0, 0, 0.15));
+}
+
+.container:hover {
+    border-color: rgb(253 186 116);
+}
